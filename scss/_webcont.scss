@@ -1,0 +1,110 @@
+.webcont {
+    padding: 52px 0;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 60px 32px 21px;
+        background-color: #F2A885;
+        border-radius: 10px;
+    }
+    &_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+        padding: 0 32px;
+    }
+    &_block {
+        width: 425px;
+        padding: 34px 0 37px 30px;
+        border-radius: 10px;
+        background: #FFF;
+        &_img {
+            margin-right: 30px;
+            float: left;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &_title {
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23.4px; /* 130% */
+        }
+        &_descr {
+            margin-top: 3px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23.4px; /* 130% */
+        }
+    }
+    &_form {
+        width: 517px;
+        padding: 22px 20px 29px 20px;
+        border-radius: 10px;
+        background: #DCDCDC;
+        &_title {
+            @include h1();
+            font-size: 32px;
+        }
+        &_placefolder {
+            padding: 0 20px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 7px;
+            border: none;
+            height: 40px;
+            &_main {
+                padding: 10px 20px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 7px;
+                border: none;
+                height: 80px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            &_btn {
+                @include button();
+                margin-top: 10px;
+                border-radius: 20px;
+                padding: 12px 40px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &_wrap {
+            margin-top: 20px;
+            width: 100%;
+            position: relative;
+            &:nth-child(1) {
+                width: 45%;
+                display: inline-block;
+            }
+            &:nth-child(2) {
+                float: right;
+                width: 45%;
+            }
+        }
+        &_name {
+            color: #828282;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 0 3px ;
+        }
+    }
+}
+
+.contmap {
+    box-sizing: content-box;
+    height: 450px;
+    border-top: #F2A885 5px solid;
+    border-bottom: #F2A885 5px solid;
+}

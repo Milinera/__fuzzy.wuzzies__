@@ -1,0 +1,29 @@
+.top {
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    background-image: url(/img/bc/mainphoto_bg.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+    min-height: 845px;
+    padding-bottom: 20px;
+    &_title {
+        width: 45%;
+        margin-top: 230px;
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 66px;
+    }
+    &_descr {
+        margin-top: 36px;
+        font-style: italic;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    &_button {
+        display: inline-block;
+        margin-top: 43px;
+        @include button();
+    }
+}

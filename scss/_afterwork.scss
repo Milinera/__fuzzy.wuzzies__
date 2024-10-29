@@ -1,0 +1,38 @@
+.afterwork {
+    padding: 81px 0 140px 0;
+    &_title {
+        @include h1();
+    }
+    &_descr {
+        margin-top: 12px;
+        @include h2();
+    }
+    &_wrapper {
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+    }
+    &_content {
+        padding-top: 20px;
+        background-color: #e7e7e7;
+    }
+    &_name {
+        color: rgb(37, 42, 75);
+        font-size: 26px;
+        font-weight: 700;
+        padding: 0 31px 0 30px;
+    }
+    &_li {
+        margin-top: 50px;
+        color: #828282;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 25px; /* 160% */
+    }
+    &_table {
+        padding: 0 31px 0 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+}

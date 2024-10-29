@@ -1,0 +1,28 @@
+.topprice {
+    width: 100%;
+    background-position: 0 40%;
+    height: 450px;
+    background-image: url(/img/bc/comments_bg.jpg);
+    background-size: 120%;
+    position: relative;
+    &_topheader {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+    }
+    &_h1 {
+        @include h1();
+        color: rgb(255, 255, 255);
+        text-align: left;
+        top: 50%;
+        position: absolute;
+        z-index: 2;
+    }
+    &_container {
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 150px;
+    }
+}

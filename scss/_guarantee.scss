@@ -1,0 +1,62 @@
+.guarantee {
+    height: 680px;
+    background-image: url(/img/bc/guarantee_bg.jpg);
+    background-size: cover;
+    background-position: 0% 30%;
+    background-attachment: fixed;
+    &_wrapper {
+        width: 45%;
+        background-color: rgba(0, 0, 0, 0.67);
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    &_content {
+        width: 500px;
+        margin-right: 58px;
+    }
+    &_title {
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+    }
+    &_descr {
+        margin-top: 32px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 23px;
+    }
+    &_ul {
+        margin-top: 29px;
+        &_li {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 20px;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 23px; /* 130% */
+            span {
+                font-weight: 700;
+            }
+            &::after {
+                background-color: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                content: '';
+                position: absolute;
+                top: -4px;
+                left: -46px;
+            }
+        }
+    }
+    &_button {
+        margin-top: 30px;
+        @include button ();
+        display: inline-block;
+    }
+}

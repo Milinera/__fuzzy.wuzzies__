@@ -1,0 +1,31 @@
+.abme {
+    padding: 70px;
+    position: relative;
+    &_img {
+        position: absolute;
+        width: 50%;
+        object-fit: cover;
+        right: 50px;
+        top: 0;
+    }
+    &_content {
+        margin-left: 150px;
+        width: 30%
+
+    }
+    &_title {
+        @include h1();
+        text-align: left;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    &_descr {
+        margin-top: 20px;
+        color: #828282;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

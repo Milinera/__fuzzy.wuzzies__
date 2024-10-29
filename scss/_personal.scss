@@ -1,0 +1,74 @@
+.personal {
+    padding: 80px 0;
+    background: #F6F3ED;
+    &_title {
+        @include h1();
+    }
+    &_descr {
+        @include h2();
+        margin-top: 15px;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &_content {
+        width: 400px;
+        height: 400px;
+        display: grid;
+        align-content: center;
+        padding-top: 32px;
+        &_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+            .personal_content_img_main {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &_title {
+            margin-top: 39px;
+            color: #000;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 44px; /* 170% */
+        }
+        &_descr {
+            margin-top: 14px;
+            color: #828282;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 25px; /* 160% */
+        }
+        &_wrapper {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        &_soc {
+            margin: 0 12px;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 15px;
+            }
+            &:hover {
+                background-color: #F2A885;
+            }       
+        }
+    }
+}

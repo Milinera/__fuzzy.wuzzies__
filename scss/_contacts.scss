@@ -1,0 +1,63 @@
+.contacts {
+    height: 600px;
+    background-color: #F6F3ED;
+    &_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &_form {
+        padding: 0 50px;
+        &_title {
+            @include h1();
+            margin-top: 20px;
+        }
+        &_placefolder {
+            padding: 0 20px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 7px;
+            border: none;
+            height: 40px;
+            &_main {
+                padding: 10px 20px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 7px;
+                border: none;
+                height: 80px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            &_btn {
+                @include button();
+                margin-top: 30px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &_wrap {
+            margin-top: 30px;
+            width: 100%;
+            position: relative;
+            &:nth-child(1) {
+                width: 45%;
+                display: inline-block;
+            }
+            &:nth-child(2) {
+                float: right;
+                width: 45%;
+            }
+        }
+        &_name {
+            color: #828282;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 0 3px ;
+        }
+    }
+}

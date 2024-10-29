@@ -1,0 +1,106 @@
+.footer {
+    background-color: #1d213a;
+    padding: 63px 0 0 0;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_title {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 31.2px; /* 130% */
+    }
+    &_descr {
+        margin-top: 8px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px; /* 150% */
+    }
+    &_social {
+        margin-top: 16px;
+        display: flex;
+        justify-content: start;
+        &_item {
+            margin-right: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #F2A885;
+            img {
+                height: 15px;
+            }
+            &:hover {
+                background-color: #F2A885;
+            }  
+        }
+    }
+    &_name {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px; /* 160% */
+    }
+    &_li {
+        margin-top: 10px;
+        a {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+    &_blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &_block {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 8px;
+        &_img {
+            svg{
+                path {
+                    stroke-width: 1px;
+                    stroke: #ffffff;
+                }
+                fill: #F2A885;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_title {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 23.4px; /* 130% */
+        }
+        &_descr {
+            a {
+                color: #828282;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 25.6px; /* 160% */
+                text-decoration: none;
+            }
+        }
+    }
+    &_bottom {
+        margin-top: 40px;
+        display: grid;
+        align-content: center;
+        height: 70px;
+        background: #141729;
+    }
+    &_creater {
+        color: #828282;
+        a {
+            color: #828282;
+        }
+    }
+}
